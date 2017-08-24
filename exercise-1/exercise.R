@@ -34,9 +34,8 @@ meals.items <- lapply(meals, length)
 # Write a function that adds pizza to every meal
 order.pizza <- function(a) {
   x1 <- length(a)
-  if(x1 > 0)
-    a[x1 + 1] <- 'pizza'
-    return(a)
+  a[x1 + 1] <- 'pizza'
+  return(a)
 }
 
 # Add pizza to every meal!
